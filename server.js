@@ -6,13 +6,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-    origin: "http://localhost:3000", // Replace with your frontend's URL
+    origin: "https://kanban-board-frontend-beige.vercel.app", 
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 204,
   };
   
-  app.use(cors(corsOptions));
+  app.use(cors());
   
 
 // Connect to MongoDB
